@@ -1,6 +1,6 @@
-require './lib/user_repositories'
+require './lib/simple_transaction'
 
-result = UserRepositories.new.call
+result = SimpleTransaction.new.call
 
 if result.success?
   puts result.success
@@ -8,7 +8,7 @@ else
   puts "Error: #{result.failure}"
 end
 
-UserRepositories.new.call do |result|
+SimpleTransaction.new.call do |result|
   result.success do |names|
     puts names
   end

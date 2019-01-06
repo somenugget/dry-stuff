@@ -1,6 +1,6 @@
 require 'dry/transaction'
 
-class UserRepositories
+class SimpleTransaction
   include Dry::Transaction
 
   step :fetch

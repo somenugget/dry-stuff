@@ -16,16 +16,34 @@ GEM
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.4)
       dry-equalizer (~> 0.2)
+    dry-inflector (0.1.2)
+    dry-logic (0.4.2)
+      dry-container (~> 0.2, >= 0.2.6)
+      dry-core (~> 0.2)
+      dry-equalizer (~> 0.2)
     dry-matcher (0.7.0)
     dry-monads (1.1.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.4, >= 0.4.4)
       dry-equalizer
+    dry-struct (0.6.0)
+      dry-core (~> 0.4, >= 0.4.3)
+      dry-equalizer (~> 0.2)
+      dry-types (~> 0.13)
+      ice_nine (~> 0.11)
     dry-transaction (0.13.0)
       dry-container (>= 0.2.8)
       dry-events (>= 0.1.0)
       dry-matcher (>= 0.7.0)
       dry-monads (>= 0.4.0)
+    dry-types (0.13.4)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.4, >= 0.4.4)
+      dry-equalizer (~> 0.2)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 0.4, >= 0.4.2)
+    ice_nine (0.11.2)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -46,7 +64,9 @@ PLATFORMS
 DEPENDENCIES
   byebug
   dry-container
+  dry-struct
   dry-transaction
+  dry-types
   rspec
 
 BUNDLED WITH

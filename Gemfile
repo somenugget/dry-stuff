@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dry-transaction'
 gem 'dry-container'
+gem 'dry-monads'
 gem 'dry-struct'
 gem 'dry-types'
 

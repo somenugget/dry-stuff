@@ -64,6 +64,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   dry-container
+  dry-monads
   dry-struct
   dry-transaction
   dry-types
